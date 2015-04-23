@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Welcome to softline!"
 date:   2015-04-23 14:17:03
 categories: jekyll update
 ---
