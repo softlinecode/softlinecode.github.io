@@ -1,0 +1,13 @@
+---
+layout: post
+title: maven 라이브러리 소스코드 다운로드
+date: '2013-06-25T05:47:00.000-07:00'
+author: Jung Gi Lim
+tags:
+- Maven
+modified_time: '2013-06-25T05:47:17.987-07:00'
+blogger_id: tag:blogger.com,1999:blog-2993388283610032812.post-2561554205131751351
+blogger_orig_url: http://softline21c.blogspot.com/2013/06/maven.html
+---
+
+maven 을 사용시 dependecy 라이브러리를 쉽게 다운 받게 합니다.<br />이때 해당 라이브러리에 소스코드또한 같이 다운 받을수 있습니다.<br /><br /><br />maven build 시<br />goal 부분에 dependency:sources &nbsp;를 해서 빌드하게 되면<br />dependecy 라이브러리에 해당되는 소스를 jar 형식으로 다운 받게 되고<br />F3으로 프로젝트를 refresh 하면 해당 라이브러리에 소스 코드가 연결되어져<br />있게 됩니다.<br /><br />소스 코드는 다운 받았으나 연결이 안된 경우에는<br />eclipse:eclipse 명령어를 할때 -DdownloadSources<br />를 함께 해서 해주시면 됩니다.<br /><br /><br /><br />

@@ -1,0 +1,14 @@
+---
+layout: post
+title: Fitnesse 사용하기
+date: '2012-03-19T07:28:00.000-07:00'
+author: Jung Gi Lim
+tags:
+- Fixture
+- Fitnesse
+modified_time: '2012-03-19T07:28:08.082-07:00'
+blogger_id: tag:blogger.com,1999:blog-2993388283610032812.post-4892335017992952561
+blogger_orig_url: http://softline21c.blogspot.com/2012/03/fitnesse.html
+---
+
+&nbsp;반복적인 테스트를 하기 위해서 좋은 방법을 고민하다가 최근에 회사에서 사용했었던 Fitnesse를 이용해서 만들어 보기로 했다. 우선 API<br /><br />&nbsp; Fitnesse Site<br />&nbsp;&nbsp;http://fitnesse.org/<br /><br />&nbsp; 최신 fitnesse.jar 다운로드<br />&nbsp; http://fitnesse.org/fitnesse.jar?responder=releaseDownload&amp;release=20111026<br /><br />&nbsp; Unix 기반 설명<br />&nbsp;<br />&nbsp; 1. fitnesse.jar 다운로드<br />&nbsp; $ wget "http://fitnesse.org/fitnesse.jar?responder=releaseDownload&amp;release=20111026"<br />&nbsp;<br />&nbsp;2. fitnesse 실행<br />&nbsp; &nbsp;default 실행(80 port 로 실행) : &nbsp;&nbsp;&nbsp;java -jar fitnesse.jar<br />&nbsp; &nbsp;port 지정 실행(지정된 port 로 실행) : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;java -jar fitnesse.jar -p 21000<br />&nbsp; &nbsp;-&gt; 실행시&nbsp;FitNesseRoot 가 생성되고 default 페이지를 생성하는 작업을 조금 한 후에<br />&nbsp; &nbsp; 실행이 된다.<br /><br />&nbsp;3. fitnesse 실행 확인<br />&nbsp; &nbsp;default 실행 : http://localhost<br />&nbsp; &nbsp;port 지정 실행 : &nbsp;http://localhost:port<br /><br />&nbsp;그러면 wiki 페이지 형식의 fitnesse 메인 화면이 보여진다.<br /><br />참고<br /><a href="http://www.fitnesse.org/FitNesse.UserGuide.DownloadingAndInstallingFitNesse">http://www.fitnesse.org/FitNesse.UserGuide.DownloadingAndInstallingFitNesse</a><br /><br /><br /><br /><br /><br />&nbsp;

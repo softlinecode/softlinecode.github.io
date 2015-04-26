@@ -1,0 +1,13 @@
+---
+layout: post
+title: '[Nginx] 설치 방법'
+date: '2012-06-27T23:42:00.002-07:00'
+author: Jung Gi Lim
+tags:
+- nginx
+modified_time: '2012-06-27T23:42:33.611-07:00'
+blogger_id: tag:blogger.com,1999:blog-2993388283610032812.post-1119470318322037699
+blogger_orig_url: http://softline21c.blogspot.com/2012/06/nginx.html
+---
+
+Nginx 설치<br /><br />먼저 의존성이 필요한 부분을 설치한다.<br /><span style="background-color: white;">yum install gcc pcre-devel bzip2-devel openssl-devel</span><br />필요한 부분을 좀더 설치하여도 된다.<br /><br />nginx 다운로드 url<br /><a href="http://nginx.org/en/download.html">http://nginx.org/en/download.html</a><br /><br />nginx 설치 url<br /><pre class="prettyprint " style="color: #666666; font-size: 12px; line-height: 18px; overflow: auto; text-align: justify; white-space: pre-wrap; word-break: break-all; word-wrap: break-word;"><code><span class="pln"><div class="autosourcing-stub-extra" style="line-height: 1.5; opacity: 0; position: absolute;"><br /><div style="font-family: Dotum; line-height: 1.5; margin-bottom: 7px; margin-top: 11px; padding: 0px;"><br /><a href="http://blog.naver.com/yves1/140110618040" style="text-decoration: none;" target="_blank">ginx 설치</a><span style="padding: 0px 7px 0px 5px;">|</span><strong style="padding: 0px 7px 0px 0px;">작성자</strong> <a href="http://blog.naver.com/yves1" style="text-decoration: none;" target="_blank">구루</a></div><br /><div style="font-family: Dotum; line-height: 1.5; margin-bottom: 7px; margin-top: 11px; padding: 0px;"><br /></div><br /></div><br /></span></code></pre><a href="http://nginx.org/en/docs/install.html" style="background-color: white; text-align: left;">http://nginx.org/en/docs/install.html</a><br /><br /><br />컴파일시 옵션처리 (샘플)<br /><br />$ ./configure --prefix=/usr/local/lib/nginx/nginx-1.2.0 \<br />--conf-path=/etc/nginx/nginx.conf \<br />--error-log-path=/var/log/nginx/error.log \<br />--http-log-path=/var/log/nginx/access.log \<br />--with-http_ssl_module \<br />--with-http_stub_status_module \<br />--user=xxx<br /><br />가장 중요한것은 컴파일시 사용하는 서비스의 web server 기능에 맞게<br />설치를 하는것입니다.<br /><br />설치시 모듈 옵셥 설정 방법<br /><br /><span style="background-color: white;">기본값이 enable 인 옵션의 경우 아래와 같이 제거 가능</span><br /><br />--without-http_proxy_module<br /><br />기본값이 disable 인 옵션의 경우 아래와 같이 활성화 가능<br />--with-http_ssl_module<br /><div><br /></div><div>위 방법으로 사용하도록, 또는 사용하지 않도록 옵션을 사용하도록 합니다.</div><div><br /></div><div>컴파일이 된후에는&nbsp;</div><div>make, make install 을 통해서 설치하시면 됩니다.</div><br />

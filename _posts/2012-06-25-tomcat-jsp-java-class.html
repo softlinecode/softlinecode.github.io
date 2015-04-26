@@ -1,0 +1,13 @@
+---
+layout: post
+title: Tomcat 에서 jsp 컴파일된 java , class 위치 보기
+date: '2012-06-24T19:42:00.003-07:00'
+author: Jung Gi Lim
+tags:
+- tomcat
+modified_time: '2012-06-24T19:42:25.911-07:00'
+blogger_id: tag:blogger.com,1999:blog-2993388283610032812.post-8534811465816357435
+blogger_orig_url: http://softline21c.blogspot.com/2012/06/tomcat-jsp-java-class.html
+---
+
+<br /><div style="font-family: 돋움, Dotum, AppleGothic, sans-serif; font-size: 12px; line-height: 18px; padding: 0px;">가끔 jsp를 변경했는데 변경된 내용이 변화지 않고 그전 내용으로 보일때가 있다.</div><div style="font-family: 돋움, Dotum, AppleGothic, sans-serif; font-size: 12px; line-height: 18px; padding: 0px;">물론 여러가지 이유가 있을 수 있지만 가끔 실제로 jsp가 변경됐는데도 불구하고 tomcat 이 새로운</div><div style="font-family: 돋움, Dotum, AppleGothic, sans-serif; font-size: 12px; line-height: 18px; padding: 0px;">class로 컴파일 하지 못해서 발생할때가 있다.</div><div style="font-family: 돋움, Dotum, AppleGothic, sans-serif; font-size: 12px; line-height: 18px; padding: 0px;"><br /></div><div style="font-family: 돋움, Dotum, AppleGothic, sans-serif; font-size: 12px; line-height: 18px; padding: 0px;">그럴때 실제로 컴파일된 class를 한번 확인해 보는것도 좋은 자세인듯 싶다.</div><div style="font-family: 돋움, Dotum, AppleGothic, sans-serif; font-size: 12px; line-height: 18px; padding: 0px;"><br /></div><div style="font-family: 돋움, Dotum, AppleGothic, sans-serif; font-size: 12px; line-height: 18px; padding: 0px;">Tomcat인 경우</div><div style="font-family: 돋움, Dotum, AppleGothic, sans-serif; font-size: 12px; line-height: 18px; padding: 0px;"><br /></div><div style="font-family: 돋움, Dotum, AppleGothic, sans-serif; font-size: 12px; line-height: 18px; padding: 0px;">/home1/irteam/app/apache-tomcat-5.5.23/work/Standalone/localhost/</div><div style="font-family: 돋움, Dotum, AppleGothic, sans-serif; font-size: 12px; line-height: 18px; padding: 0px;">프로젝트이름/org/apache/jsp/ ...</div><div style="font-family: 돋움, Dotum, AppleGothic, sans-serif; font-size: 12px; line-height: 18px; padding: 0px;"><br /></div><div style="font-family: 돋움, Dotum, AppleGothic, sans-serif; font-size: 12px; line-height: 18px; padding: 0px;">의 경로로 들어가면 확인해 볼수 있다.</div>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>[eUML2] java class diagram (eclipse plugin)</title>
+  <meta name="description" content="&nbsp;개발자라면 ClassDiagram 이라던지 UseCase 에 대해서 어느정도 기본 지식을 있을 겁니다. 이런 도구들을 사용해야 하는 부분이 있고 사용하지 않는 부분이 있다고 생각됩니다.﻿ 저도 사실은 예전에 이런 도구들에 대해서 많은 환상을 가지고 있었습니다. class...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://yourdomain.com/2012/06/25/euml2-java-class-diagram-eclipse-plugin.html">
+  <link rel="alternate" type="application/rss+xml" title="softlinecode blog" href="http://yourdomain.com/feed.xml" />
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">softlinecode blog</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+          <a class="page-link" href="/about/">About</a>
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">[eUML2] java class diagram (eclipse plugin)</h1>
+    <p class="post-meta">Jun 25, 2012 • Jung Gi Lim</p>
+  </header>
+
+  <article class="post-content">
+    <br /><div style="font-family: 돋움, Dotum, AppleGothic, sans-serif; font-size: 12px; line-height: 18px; padding: 0px;"><br style="margin: 0px; padding: 0px;" />&nbsp;개발자라면 ClassDiagram 이라던지 UseCase 에 대해서 어느정도 기본 지식을 있을 겁니다. 이런 도구들을 사용해야 하는 부분이 있고 사용하지 않는 부분이 있다고 생각됩니다.</div><div style="font-family: 돋움, Dotum, AppleGothic, sans-serif; font-size: 12px; line-height: 18px; padding: 0px;">﻿ 저도 사실은 예전에 이런 도구들에 대해서 많은 환상을 가지고 있었습니다. class diagram을 그려서 코드를 generate 해서 개발하는 것까지 테스트를 해보았을 정도였습니다. 최근에 와서는 웹서비스에서 개발을 하다보니 웹 특성상 트렌드가 빠르게 변하고 사용자에게 빠르게 피드백을 주어야 하는 관계로 이런한 도구들의 업데이트(유지보수)가 불편할 거라는 생각이 들었습니다. 그래서 사용하지를 않았는데요. 최근에 기존 코드의 복잡성이나 관계성을 보려고 하다가&nbsp; classdiagram을 사용해 봐야 하겠다는 생각에 찾아본 eclipse plugin 입니다. 설치시 여러 곳에 정보가 있는데 잘 안되다가 해결해서 정리합니다.</div><div style="font-family: 돋움, Dotum, AppleGothic, sans-serif; font-size: 12px; line-height: 18px; padding: 0px;"><br /></div><div style="font-family: 돋움, Dotum, AppleGothic, sans-serif; font-size: 12px; line-height: 18px; padding: 0px;">eUML2 의 경우 구매버젼과 Free 버젼이 있습니다. 전 Free 버젼을 좋아합니다.</div><div style="font-family: 돋움, Dotum, AppleGothic, sans-serif; font-size: 12px; line-height: 18px; padding: 0px;"><br /></div><div style="font-family: 돋움, Dotum, AppleGothic, sans-serif; font-size: 12px; line-height: 18px; padding: 0px;">1. Free Edition 다운로드</div><div style="font-family: 돋움, Dotum, AppleGothic, sans-serif; font-size: 12px; line-height: 18px; padding: 0px;"><a class="con_link" href="http://www.soyatec.com/euml2/installation/offline.php#offline" target="_blank">http://www.soyatec.com/euml2/installation/offline.php#offline</a></div><div style="font-family: 돋움, Dotum, AppleGothic, sans-serif; font-size: 12px; line-height: 18px; padding: 0px;">가서 자신이 사용하는 eclipse 버젼에 맞게 Free Editon 버젼을 받으시면 됩니다.</div><div style="font-family: 돋움, Dotum, AppleGothic, sans-serif; font-size: 12px; line-height: 18px; padding: 0px;">저는&nbsp;<span class="Apple-style-span" style="color: #00489c; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; line-height: 16px;"><a class="con_link" href="http://www.soyatec.com/update/eUML2-free-Edition-3.6.1.20110420+dependencies_for_eclipse3.6.zip" style="color: #00489c; margin: 0px; padding: 0px;" target="_blank"><b style="margin: 0px; padding: 0px;">eUML2 Free Edition 3.6.1.20110420</b>&nbsp;+ required plugins</a>&nbsp;for Helios/Eclipse 3.6.x&nbsp;<span style="color: black;">해당 파일을</span></span></div><div style="font-family: 돋움, Dotum, AppleGothic, sans-serif; font-size: 12px; line-height: 18px; padding: 0px;"><span class="Apple-style-span" style="font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; line-height: 16px;">다운 받았습니다.</span></div><div style="font-family: 돋움, Dotum, AppleGothic, sans-serif; font-size: 12px; line-height: 18px; padding: 0px;"><br /></div><div style="font-family: 돋움, Dotum, AppleGothic, sans-serif; font-size: 12px; line-height: 18px; padding: 0px;"><span class="Apple-style-span" style="color: #00489c; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; line-height: 16px;"><span style="color: black; font-family: 돋움;">2. Eclipse plugin 설치</span></span></div><div style="font-family: 돋움, Dotum, AppleGothic, sans-serif; font-size: 12px; line-height: 18px; padding: 0px;"><span class="Apple-style-span" style="color: #00489c; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; line-height: 16px;"><span style="color: black; font-family: 돋움;">help -&gt; install new software 로 들어가서</span></span></div><div style="font-family: 돋움, Dotum, AppleGothic, sans-serif; font-size: 12px; line-height: 18px; padding: 0px;"><span class="Apple-style-span" style="color: #00489c; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; line-height: 16px;"><span style="color: black; font-family: 돋움;">Work with 에 url&nbsp;을&nbsp;<span class="Apple-style-span" style="background-color: #dee3e7; font-family: Verdana, Arial, Helvetica, sans-serif; line-height: 18px;">Helios -&nbsp;<a class="con_link" href="http://download.eclipse.org/releases/helios" style="color: #006699;" target="_blank">http://download.eclipse.org/releases/helios</a>&nbsp;</span></span></span></div><div style="font-family: 돋움, Dotum, AppleGothic, sans-serif; font-size: 12px; line-height: 18px; padding: 0px;"><span class="Apple-style-span" style="color: #00489c; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; line-height: 16px;"><span style="color: black; font-family: 돋움;"><span class="Apple-style-span" style="background-color: #dee3e7; font-family: Verdana, Arial, Helvetica, sans-serif; line-height: 18px;">﻿을 입력 하면 설치 가능한 항목들이 나옵니다.</span></span></span></div><div style="font-family: 돋움, Dotum, AppleGothic, sans-serif; font-size: 12px; line-height: 18px; padding: 0px;"><span class="Apple-style-span" style="color: #00489c; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; line-height: 16px;"><span style="color: black; font-family: 돋움;"><span class="Apple-style-span" style="background-color: #dee3e7; font-family: Verdana, Arial, Helvetica, sans-serif; line-height: 18px;">해당 항목중&nbsp;install EMF - Eclipse Modeling Framework SDK&nbsp;<span style="background-color: white;">﻿ 을 설치합니다.</span></span></span></span></div><div style="font-family: 돋움, Dotum, AppleGothic, sans-serif; font-size: 12px; line-height: 18px; padding: 0px;"><span class="Apple-style-span" style="color: #00489c; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; line-height: 16px;"><span style="color: black; font-family: 돋움;"><span class="Apple-style-span" style="background-color: #dee3e7; font-family: Verdana, Arial, Helvetica, sans-serif; line-height: 18px;"><span style="background-color: white;">설치후 동일한 방법으로&nbsp;<span class="Apple-style-span" style="background-color: #dee3e7;">install Graphical Modeling Framework (GMF) Runtimes<span style="background-color: white;">을 설치합니다.</span></span></span></span></span></span></div><div style="font-family: 돋움, Dotum, AppleGothic, sans-serif; font-size: 12px; line-height: 18px; padding: 0px;"><br /></div><div style="font-family: 돋움, Dotum, AppleGothic, sans-serif; font-size: 12px; line-height: 18px; padding: 0px;"><span class="Apple-style-span" style="color: #00489c; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; line-height: 16px;"><span style="color: black; font-family: 돋움;">3. Eclipse plugin 다운로드 파일로 설치</span></span></div><div style="font-family: 돋움, Dotum, AppleGothic, sans-serif; font-size: 12px; line-height: 18px; padding: 0px;"><span class="Apple-style-span" style="color: #00489c; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; line-height: 16px;"><span style="color: black; font-family: 돋움;">&nbsp;2.번 항목에서 2개를 모두 설치후 1번에서 다운 받은 파일을 plugin 으로 설치합니다.</span></span></div><div style="font-family: 돋움, Dotum, AppleGothic, sans-serif; font-size: 12px; line-height: 18px; padding: 0px;"><span class="Apple-style-span" style="color: #00489c; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; line-height: 16px;"><span style="color: black; font-family: 돋움;">&nbsp;help -&gt; install new software 로 들어가서</span></span></div><div style="font-family: 돋움, Dotum, AppleGothic, sans-serif; font-size: 12px; line-height: 18px; padding: 0px;"><span class="Apple-style-span" style="color: #00489c; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; line-height: 16px;"><span style="color: black; font-family: 돋움;">&nbsp;add 버튼을 클릭한 후 archive 를 클릭후 탐색기에서 1번에서 설치한 파일을 선택한 후</span></span></div><div style="font-family: 돋움, Dotum, AppleGothic, sans-serif; font-size: 12px; line-height: 18px; padding: 0px;"><span class="Apple-style-span" style="color: #00489c; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; line-height: 16px;"><span style="color: black; font-family: 돋움;">&nbsp;설치하면 됩니다.</span></span></div><div style="font-family: 돋움, Dotum, AppleGothic, sans-serif; font-size: 12px; line-height: 18px; padding: 0px;"><br /></div><div style="font-family: 돋움, Dotum, AppleGothic, sans-serif; font-size: 12px; line-height: 18px; padding: 0px;"><span class="Apple-style-span" style="color: #00489c; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; line-height: 16px;"><span style="color: black; font-family: 돋움;">1,2,3 번을 모두 수행하고 eclipse 를 restart 하고 나면 java 파일이나 패키지폴더를 선택후 오른쪽 마우스 클릭하면 context menu 에 eUML2 메뉴가 나옵니다. 해당 메뉴에서 본인이 보고 싶은 것을 선택해서 보시면 됩니다.</span></span></div><div style="font-family: 돋움, Dotum, AppleGothic, sans-serif; font-size: 12px; line-height: 18px; padding: 0px;"><br /></div><div style="font-family: 돋움, Dotum, AppleGothic, sans-serif; font-size: 12px; line-height: 18px; padding: 0px;"><span class="Apple-style-span" style="color: #00489c; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif; line-height: 16px;"><span style="color: black; font-family: 돋움;">아직은 많이 사용하지 않았지만 기존 코드에 대한 class diagram 이나 복잡도를 보고 싶을때 유용하게 사용할 수 있을 것 같습니다.</span></span></div><div style="font-family: 돋움, Dotum, AppleGothic, sans-serif; font-size: 12px; line-height: 18px; padding: 0px;"><br /></div><div style="font-family: 돋움, Dotum, AppleGothic, sans-serif; font-size: 12px; line-height: 18px; padding: 0px;"><br /></div><div style="font-family: 돋움, Dotum, AppleGothic, sans-serif; font-size: 12px; line-height: 18px; padding: 0px;"><br /></div><div style="font-family: 돋움, Dotum, AppleGothic, sans-serif; font-size: 12px; line-height: 18px; padding: 0px;"><br /></div><div style="font-family: 돋움, Dotum, AppleGothic, sans-serif; font-size: 12px; line-height: 18px; padding: 0px;"><br /></div><div style="font-family: 돋움, Dotum, AppleGothic, sans-serif; font-size: 12px; line-height: 18px; padding: 0px;"><br /></div><div style="font-family: 돋움, Dotum, AppleGothic, sans-serif; font-size: 12px; line-height: 18px; padding: 0px;"><br /></div><div style="font-family: 돋움, Dotum, AppleGothic, sans-serif; font-size: 12px; line-height: 18px; padding: 0px;"><br /></div>
+  </article>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">softlinecode blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li>softlinecode blog</li>
+          <li><a href="mailto:softlinecode@gmail.com">softlinecode@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/jekyll">
+              <span class="icon  icon--github">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+                </svg>
+              </span>
+
+              <span class="username">jekyll</span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/jekyllrb">
+              <span class="icon  icon--twitter">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809
+                  c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/>
+                </svg>
+              </span>
+
+              <span class="username">jekyllrb</span>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

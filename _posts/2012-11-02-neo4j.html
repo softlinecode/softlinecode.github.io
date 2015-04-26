@@ -1,0 +1,14 @@
+---
+layout: post
+title: neo4j 는 무엇인가?
+date: '2012-11-02T02:55:00.002-07:00'
+author: Jung Gi Lim
+tags:
+- neo4j
+modified_time: '2012-11-07T22:00:58.655-08:00'
+thumbnail: http://3.bp.blogspot.com/-DMqeqzXRadM/UJOFSOdvZAI/AAAAAAAAAE4/69W62HqhixQ/s72-c/graphdb-gve.png
+blogger_id: tag:blogger.com,1999:blog-2993388283610032812.post-7749455450655755267
+blogger_orig_url: http://softline21c.blogspot.com/2012/11/neo4j.html
+---
+
+최근에 그래픽 기반 noSql DB인 neo4j 에 대해서 알게 되었다.<br />관련된 부분에 관심을 가지게 되어서 혼자 이것저것 또 해보게 되었다.<br /><br />neo4j 에 대해서 자료가 없어서 neo4j 사이트에서 하나씩 해보려고 합니다.<br /><br /><a href="http://neo4j.org/">http://neo4j.org/</a><br /><br />&nbsp;우선 neo4j는 그동안 RDB , noSql DB등에서는 데이터 사이에 관계(RDB의 relation 하고는<br />조금 개념이 다른 관계)에 대해서는 표현하기가 어려웠습니다.<br />예를 들어서 홍길동(A) , 임꺽정(B) 의 데이터가 있고 이 두개의 데이터가 친구라는 관계를 같이 DB에 남겨야 합니다. 또한 김연아(C) 는 홍길동의 제자 입니다. 이런 데이터와 데이터의 관계를 기존 RDB나 noSqlDB 에서는 표현하는데 그리 적합하지 않았습니다. 물론 방법이 없는건 아니었지만 그리 권장할 방법은 아니었습니다.<br /><br />&nbsp; 최근에 SNS등 여러가지 데이터의 관계가 매우 중요한 데이터가 되는 서비스들이 많이 발생하고 있고, 이런 관계를 통해서 서비스의 확장을 도모하는 경우가 많습니다.<br />&nbsp;아직 조금은 아쉬운 부분이 있으나 이러한 관계를 저장하기 위한 DB로 활용하면 장점이 많이 있는 graph database 입니다.<br /><br /><div class="separator" style="clear: both; text-align: center;"></div><br /><div class="separator" style="clear: both; text-align: center;"></div><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-DMqeqzXRadM/UJOFSOdvZAI/AAAAAAAAAE4/69W62HqhixQ/s1600/graphdb-gve.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="http://3.bp.blogspot.com/-DMqeqzXRadM/UJOFSOdvZAI/AAAAAAAAAE4/69W62HqhixQ/s320/graphdb-gve.png" width="280" /></a></div><br /><br /><br />우선 해당 그림을 보시면 간단하게 하나의 graph에 어떠한 값들이 저장되는지 알수 있습니다.<br />&nbsp; <br /><br /><br />
